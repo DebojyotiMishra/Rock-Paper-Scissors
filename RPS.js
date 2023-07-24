@@ -63,6 +63,6 @@ function playGame(playerMove) {
     localStorage.setItem("score", JSON.stringify(score))
 
     document.querySelector('.js-result').innerHTML = result;
-    document.querySelector('.js-result-compare').innerHTML = `Your Move: <img src = "./images/${playerMove}.png" width = "40px"> : <img src = "./images/${computerMove}.png" width = "40px"> Computer`;
+    document.querySelector('.js-result-compare').innerHTML = `Your Move <img src = "./images/${playerMove}.png" width = "40px"> : <img src = "./images/${computerMove}.png" width = "40px"> Computer`;
     document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
